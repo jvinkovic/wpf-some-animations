@@ -1,0 +1,24 @@
+﻿<Window x:Class="SomeAnimations.Marquee"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mar="clr-namespace:SomeAnimations"
+    Title="Marquee" Height="520" Width="470" >
+    <WrapPanel Orientation="Horizontal">
+        <StackPanel Orientation="Vertical" >
+            <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Text="LeftToRight Marquee"></TextBlock>
+            <mar:MarqueeText Background="Red" FontSize="25" MarqueeTimeInSeconds="10" Foreground="Green" Margin="10"  MarqueeContent="Bangladesh" Height="200" Width="200" MarqueeType="LeftToRight"></mar:MarqueeText>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" >
+            <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Text="RightToLeft Marquee"></TextBlock>
+            <mar:MarqueeText Background="Red" FontSize="25" MarqueeTimeInSeconds="10"  Foreground="Green" Margin="10" MarqueeContent="Bangladesh" Height="200" Width="200" MarqueeType="RightToLeft"></mar:MarqueeText>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" >
+            <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Text="TopToBottom Marquee"></TextBlock>
+            <mar:MarqueeText Background="Red" FontSize="25" MarqueeTimeInSeconds="10"  Foreground="Green" Margin="10" MarqueeContent="Bangladesh" Height="200" Width="200" MarqueeType="TopToBottom"></mar:MarqueeText>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" >
+            <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Text="BottomToTop Marquee"></TextBlock>
+            <mar:MarqueeText Background="Red" FontSize="25" MarqueeTimeInSeconds="10"  Foreground="Green" Margin="10" MarqueeContent="Bangladesh" Height="200" Width="200" MarqueeType="BottomToTop"></mar:MarqueeText>
+        </StackPanel>
+    </WrapPanel>
+</Window>
